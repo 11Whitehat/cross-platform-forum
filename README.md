@@ -4,6 +4,7 @@
   <a href="README_en.md">🇺🇸 English</a> | 
   <a href="README_es.md">🇪🇸 Español</a> | 
   <a href="README_ja.md">🇯🇵 日本語</a> | 
+  <a href="README_ja.md">🇰🇷 한국어</a> | 
   <a href="README_fr.md">🇫🇷 Français</a> | 
   <a href="README_de.md">🇩🇪 Deutsch</a> | 
   <a href="README_ru.md">🇷🇺 Русский</a> | 
