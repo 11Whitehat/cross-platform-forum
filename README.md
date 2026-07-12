@@ -1,7 +1,3 @@
-# cross-platform-forum
-A cross-platform forum system with secure email auth and mobile-to-desktop QR login.
-
-
 <p align="center">
   <!-- width 调到了 220，让图标明显放大 -->
   <img src="logo.png" width="220" alt="App Icon">
