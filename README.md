@@ -51,3 +51,27 @@
 *   **前端全端 UI**：Google Flutter (Dart 语言)
 *   **云端综合认证服务器**：Node.js (Express + JWT 安全令牌)
 *   **数据高速缓存**：Redis（用于 5 分钟邮件验证码及 60 秒动态二维码的生命周期管理）
+
+---
+
+## 📂 项目规范化多端目录架构
+本项目采用 Monorepo（单仓多包）结构，在同一个仓库内统一管理设计资产、客户端及云端服务端代码：
+
+```text
+nexus_forum_project/         # 📦 项目总根目录
+├── ui_design/               # 🎨 独立UI设计资产
+│   ├── phone_tablet/        # 📱 移动端（手机/平板）设计稿、切图及布局原型
+│   └── desktop/             # 💻 桌面端（Windows/Mac/Linux）大屏版设计稿
+│
+├── forum_client/            # 📱💻 Flutter 多端通用客户端（纯原生编译，无网页端）
+│   ├── lib/
+│   │   ├── config.dart      # ⚙️ 全局配置文件（局域网 IP 与端口配置）
+│   │   ├── main.dart        # 🚀 跨端设备检测、注册登录流综合主入口
+│   │   ├── desktop_view.dart# 💻 桌面端专用：支持【显示二维码】与【表单登录】一键切换
+│   │   └── mobile_view.dart # 📱 移动端专用：包含两阶段登录，且【登录后方可唤起扫一扫】
+│   └── pubspec.yaml         # 📦 客户端依赖配置文件（qr_flutter, mobile_scanner等）
+│
+└── forum_server/            # 🖥️ Node.js 综合认证云服务器
+    ├── server.js            # 🚀 后端核心服务（包含邮箱验证、双阶登录拦截、60秒二维码生命周期）
+    └── package.json         # 📦 服务端依赖配置文件（express, bcryptjs, nodemailer, jwt）
+```
