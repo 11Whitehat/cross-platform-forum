@@ -39,6 +39,30 @@ Built on a modern cross-platform UI architecture to deliver a smooth experience 
 ---
 
 ## 🛠️ Tech Stack
-*   **Frontend Cross-Platform UI**: Google Flutter (Dart)
-*   **Cloud Authentication Server**: Node.js (Express + JWT)
-*   **High-Speed Cache**: Redis (for 5-min email code and 60s QR code lifecycle management)
+*   **Cross-Platform Frontend UI**: Google Flutter (Dart Language)
+*   **Cloud Authentication Server**: Node.js (Express + JWT Secure Token)
+*   **High-Speed Cache**: Redis (for 5-minute email code and 60-second dynamic QR code lifecycle management)
+
+---
+
+## 📂 Standardized Multi-Platform Directory Structure
+This project uses a Monorepo structure to centrally manage design assets, client-side, and cloud-side server code within a single repository:
+
+```text
+nexus_forum_project/         # 📦 Project Root Directory
+├── ui_design/               # 🎨 Independent UI Design Assets
+│   ├── phone_tablet/        # 📱 Mobile (Phone/Tablet) design drafts, slices, and layout prototypes
+│   └── desktop/             # 💻 Desktop (Windows/Mac/Linux) large screen design drafts
+│
+├── forum_client/            # 📱💻 Flutter Multi-Platform Client (Pure native compilation, NO Web edition)
+│   ├── lib/
+│   │   ├── config.dart      # ⚙️ Global Configuration (LAN IP & port setup)
+│   │   ├── main.dart        # 🚀 Cross-device detection, entry point for signup/login flows
+│   │   ├── desktop_view.dart# 💻 Desktop Exclusive: Supports one-key toggle between [QR Code] & [Form Login]
+│   │   └── mobile_view.dart # 📱 Mobile Exclusive: Dual-stage login, [Scan] unlocked ONLY after login
+│   └── pubspec.yaml         # 📦 Client Dependencies (qr_flutter, mobile_scanner, etc.)
+│
+└── forum_server/            # 🖥️ Node.js Integrated Authentication Cloud Server
+    ├── server.js            # 🚀 Core Backend Services (Email verification, dual-stage interception, 60s QR lifecycle)
+    └── package.json         # 📦 Server Dependencies (express, bcryptjs, nodemailer, jwt)
+```
