@@ -42,3 +42,27 @@
 *   **前端全端 UI**：Google Flutter (Dart 語言)
 *   **雲端綜合認證服務器**：Node.js (Express + JWT 安全令牌)
 *   **數據高速緩存**：Redis（用於 5 分鐘郵件驗證碼及 60 秒動態二維碼的生命週期管理）
+
+---
+
+## 📂 項目規範化多端目錄架構
+本項目採用 Monorepo（單倉多包）結構，在同一個倉庫內統一管理設計資產、客戶端及雲端服務端代碼：
+
+```text
+nexus_forum_project/         # 📦 項目總根目錄
+├── ui_design/               # 🎨 獨立UI設計資產
+│   ├── phone_tablet/        # 📱 移動端（手機/平板）設計稿、切圖及布局原型
+│   └── desktop/             # 💻 桌面端（Windows/Mac/Linux）大屏版設計稿
+│
+├── forum_client/            # 📱💻 Flutter 多端通用客戶端（純原生編譯，無網頁端）
+│   ├── lib/
+│   │   ├── config.dart      # ⚙️ 全局配置文件（局域網 IP 與端口配置）
+│   │   ├── main.dart        # 🚀 跨端設備檢測、注冊登錄流綜合主入口
+│   │   ├── desktop_view.dart# 💻 桌面端專用：支持【顯示二維碼】與【表單登錄】一鍵切換
+│   │   └── mobile_view.dart # 📱 移動端專用：包含兩階段登錄，且【登錄後方可喚起掃一掃】
+│   └── pubspec.yaml         # 📦 客戶端依賴配置文件（qr_flutter, mobile_scanner等）
+│
+└── forum_server/            # 🖥️ Node.js 綜合認證雲服務器
+    ├── server.js            # 🚀 後端核心服務（包含郵箱驗證、雙階登錄攔截、60秒二維碼生命周期）
+    └── package.json         # 📦 服務端依賴配置文件（express, bcryptjs, nodemailer, jwt）
+```
