@@ -25,3 +25,34 @@
 1.  **🔄 Synchronisation Instantanée**: Cloud sync en temps réel pour les messages et notifications entre tous vos appareils.
 2.  **🛡️ Authentication Sécurisée en Deux Étapes**: Protection par mot de passe couplée à un code de validation dynamique à 6 chiffres envoyé par e-mail.
 3.  **📲 Connexion par Code QR en 60s**: Scannez le code QR sur l'écran du PC avec votre téléphone pour vous connecter sans mot de passe.
+
+---
+
+## 🛠️ Stack Technique
+*   **UI Frontend Multiplateforme**: Google Flutter (Langage Dart)
+*   **Serveur d'Authentification Cloud**: Node.js (Express + Jeton Sécurisé JWT)
+*   **Cache Haute Vitesse**: Redis (Pour la gestion du cycle de vie du code e-mail de 5 min et du code QR dynamique de 60s)
+
+---
+
+## 📂 Structure de Répertoire Multiplateforme Standardisée
+Ce projet utilise une structure Monorepo pour centraliser la gestion des actifs de conception, du client et du code du serveur cloud au sein d'un seul dépôt :
+
+```text
+nexus_forum_project/         # 📦 Répertoire Racine du Projet
+├── ui_design/               # 🎨 Actifs de Conception d'Interface Indépendants
+│   ├── phone_tablet/        # 📱 Maquettes de conception, découpes et prototypes de mise en page pour mobiles (Téléphone/Tablette)
+│   └── desktop/             # 💻 Maquettes de conception grand écran pour bureau (Windows/Mac/Linux)
+│
+├── forum_client/            # 📱💻 Client Multiplateforme Flutter (Compilation native pure, SANS édition Web)
+│   ├── lib/
+│   │   ├── config.dart      # ⚙️ Configuration Globale (Configuration de l'IP LAN et du port)
+│   │   ├── main.dart        # 🚀 Détection d'appareil, point d'entrée pour les flux d'inscription/connexion
+│   │   ├── desktop_view.dart# 💻 Exclusif Bureau: Bascule en un clic entre [Code QR] et [Connexion Formulaire]
+│   │   └── mobile_view.dart # 📱 Exclusif Mobile: Connexion en deux étapes, [Scanner] déverrouillé UNIQUEMENT après connexion
+│   └── pubspec.yaml         # 📦 Dépendances du Client (qr_flutter, mobile_scanner, etc.)
+│
+└── forum_server/            # 🖥️ Serveur Cloud d'Authentification Intégré Node.js
+    ├── server.js            # 🚀 Services Backend Centraux (Vérification d'e-mail, interception en deux étapes, cycle QR de 60s)
+    └── package.json         # 📦 Dépendances du Serveur (express, bcryptjs, nodemailer, jwt)
+```
