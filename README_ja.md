@@ -1,0 +1,27 @@
+<p align="right">
+  <a href="README.md">🇨🇳 简体中文</a> | <a href="README_tw.md">🇭🇰 繁體中文</a> | <a href="README_en.md">🇺🇸 English</a> | <a href="README_es.md">🇪🇸 Español</a> | <b>🇯🇵 日本語</b> | <a href="README_fr.md">🇫🇷 Français</a> | <a href="README_de.md">🇩🇪 Deutsch</a> | <a href="README_ru.md">🇷🇺 Русский</a> | <a href="README_ar.md">🇸🇦 العربية</a> | 🌐 <a href="https://google.com" target="_blank">More</a>
+</p>
+
+<p align="center">
+  <img src="logo.png" width="220" alt="App Icon">
+</p>
+
+<h1 align="center">🌐 Nexus Forum プロジェクト 💬</h1>
+
+<p align="center" style="color: gray; font-size: 16px;">
+  シームレスな多端末同期を特徴とする、高性能で最新のマルチプラットフォーム掲示板システム。
+</p>
+
+---
+
+## 📱 マルチプラットフォーム対応
+*   **モバイル**: iOS 16 ~ iOS 27、Android 12 ~ Android 18
+*   **デスクトップ**: Windows 10 / 11 / 12、macOS (Apple & Intel, 10.15 以上)、Linux
+*   **レガシーPC専用チャネル**: Windows 7 / 8 / 8.1 ユーザー向けの独立した互換クライアントを提供。
+
+---
+
+## 🔐 主な機能と特徴
+1.  **🔄 リアルタイム同期**: スマートフォン、タブレット、PC間で投稿、通知、プロフィールをクラウド経由で即座に同期。
+2.  **🛡️ 2段階の安全認証**: ユーザー名/メールアドレスによるログインと、メールで送信される6桁の動的検証コードによる本人確認。
+3.  **📲 60秒QRコードかんたんログイン**: PC画面に生成されたQRコードをスマホアプリでスキャンするだけで、パスワード不要でログイン可能。
