@@ -9,7 +9,7 @@
   <a href="README_de.md">🇩🇪 Deutsch</a> | 
   <a href="README_ru.md">🇷🇺 Русский</a> | 
   <a href="README_ar.md">🇸🇦 العربية</a> |
-  🌐 <a href="(https://translate.google.com/)" target="_blank">More (全球语言翻译)</a>
+ 🌐 <a href="https://google.com" target="_blank">More</a>
 </p>
 
 <p align="center">
