@@ -1,5 +1,14 @@
 <p align="right">
-  🌐 <a href="https://google.com" target="_blank"><b>Translate to your language / 全球语言翻译</b></a>
+  <b>🇨🇳 简体中文</b> | 
+  <a href="README_tw.md">🇭🇰 繁體中文</a> | 
+  <a href="README_en.md">🇺🇸 English</a> | 
+  <a href="README_es.md">🇪🇸 Español</a> | 
+  <a href="README_ja.md">🇯🇵 日本語</a> | 
+  <a href="README_fr.md">🇫🇷 Français</a> | 
+  <a href="README_de.md">🇩🇪 Deutsch</a> | 
+  <a href="README_ru.md">🇷🇺 Русский</a> | 
+  <a href="README_ar.md">🇸🇦 العربية</a> |
+  🌐 <a href="https://google.com" target="_blank">More (全球语言翻译)</a>
 </p>
 
 <p align="center">
