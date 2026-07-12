@@ -1,5 +1,5 @@
 <p align="right">
-  <a href="README.md">🇨🇳 简体中文</a> | <a href="README_tw.md">🇭🇰 繁體中文</a> | <a href="README_en.md">🇺🇸 English</a> | <a href="README_es.md">🇪🇸 Español</a> | <b>🇯🇵 日本語</b> | <a href="README_ko.md">🇰🇷 한국어</a> | <a href="README_fr.md">🇫🇷 Français</a> | <a href="README_de.md">🇩🇪 Deutsch</a> | <a href="README_ru.md">🇷🇺 Русский</a> | <a href="README_ar.md">🇸🇦 العربية</a> | 🌐 <a href="https://google.com" target="_blank">More</a>
+  <a href="README.md">🇨🇳 简体中文</a> | <a href="README_tw.md">🇭🇰 繁體中文</a> | <a href="README_en.md">🇺🇸 English</a> | <a href="README_es.md">🇪🇸 Español</a> | <b>🇯🇵 日本語</b> | <a href="README_ko.md">🇰🇷 한국어</a> | <a href="README_fr.md">🇫🇷 Français</a> | <a href="README_de.md">🇩🇪 Deutsch</a> | <a href="README_ru.md">🇷🇺 Русский</a> | <a href="README_ar.md">🇸🇦 العربية</a> | 🌐 <a href="https://translate.google.com" target="_blank">More</a>
 </p>
 
 <p align="center">
