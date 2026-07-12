@@ -1,7 +1,11 @@
 # cross-platform-forum
 A cross-platform forum system with secure email auth and mobile-to-desktop QR login.
 
-# 🔗 互联综合论坛 (Nexus Forum Project) 💬
+<p align="center">
+  <img src="logo.png" width="120" height="120" alt="App Icon">
+</p>
+
+# 🌐 互联综合论坛 (Nexus Forum Project) 💬
 > 一款面向广大网民的、高性能、全平台无缝同步的现代化通用论坛系统。
 
 ---
